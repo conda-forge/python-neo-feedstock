@@ -23,6 +23,8 @@ requirements:
 
   run:
     - python
+    # Needed for pkg_resources
+    - setuptools
     - numpy >=1.3.0
     - quantities >=0.9.0
 
