@@ -24,8 +24,8 @@ requirements:
     - python
     # Needed for pkg_resources
     - setuptools
-    - numpy >=1.7.1
-    - quantities >=0.9.0
+    - numpy >=1.10.0,!=1.16.0
+    - quantities >=0.12.1
 
 test:
   imports:
