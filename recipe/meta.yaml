@@ -43,6 +43,8 @@ about:
   license: BSD 3-Clause
   license_file: LICENSE.txt
   summary: A Python package for representing and reading electrophysiology data.
+  doc_url: https://neo.readthedocs.io/
+  dev_url: https://github.com/NeuralEnsemble/python-neo
 
 extra:
   recipe-maintainers:
