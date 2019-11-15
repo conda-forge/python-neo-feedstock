@@ -32,8 +32,11 @@ test:
     - neo
     - neo.core
     - neo.io
+    - neo.rawio
     - neo.test
+    - neo.test.coretest
     - neo.test.iotest
+    - neo.test.rawiotest
 
 about:
   home: http://neuralensemble.org/neo
