@@ -41,12 +41,7 @@ test:
 about:
   home: http://neuralensemble.org/neo
   license: BSD 3-Clause
-  # Not yet included in the `sdist`.
-  # Raised a PR upstream to include in the future.
-  #
-  # ref: https://github.com/NeuralEnsemble/python-neo/pull/532
-  #
-  # license_file: LICENSE.txt
+  license_file: LICENSE.txt
   summary: A Python package for representing and reading electrophysiology data.
 
 extra:
