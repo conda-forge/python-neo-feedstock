@@ -24,7 +24,8 @@ requirements:
     - python >=3.7
     # Needed for pkg_resources
     - setuptools
-    - numpy >=1.16.1
+    - packaging
+    - numpy >=1.18.5
     - quantities >=0.12.1
 
 test:
