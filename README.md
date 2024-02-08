@@ -150,4 +150,5 @@ Feedstock Maintainers
 * [@apdavison](https://github.com/apdavison/)
 * [@jakirkham](https://github.com/jakirkham/)
 * [@samuelgarcia](https://github.com/samuelgarcia/)
+* [@zm711](https://github.com/zm711/)
 
