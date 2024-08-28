@@ -1,5 +1,5 @@
 {% set name = "neo" %}
-{% set version = "0.13.2" %}
+{% set version = "0.13.3" %}
 
 package:
   name: python-{{ name }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: python-{{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6980d9542e795d5351fd5b5d9d394104a47f30d0ef7f0511faca6a7b5e2772bc
+  sha256: 2d3f5900e6c887cb2e8df4181ba23531e71d7c740d6eea0c97877743313d28ae
 
 build:
   number: 0
