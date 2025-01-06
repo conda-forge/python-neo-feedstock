@@ -7,22 +7,22 @@ package:
 
 source:
   fn: python-{{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: b7264acb7ba7eeaa0a8e91a15ae4dbc8b4dd56c3e38bc7d1cc0442dc5b71dd72
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
     - setuptools  # build backend
 
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     # Needed for pkg_resources
     - setuptools
     - packaging
@@ -30,6 +30,8 @@ requirements:
     - quantities >=0.16.1
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - neo
     - neo.core
