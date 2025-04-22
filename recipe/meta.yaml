@@ -24,9 +24,9 @@ requirements:
   run:
     - python >={{ python_min }}
     # Needed for pkg_resources
-    - setuptools
+    - setuptools >= 78.0.2
     - packaging
-    - numpy >=1.22.4
+    - numpy >=1.24.4
     - quantities >=0.16.1
 
 test:
