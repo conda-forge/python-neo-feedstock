@@ -32,6 +32,7 @@ requirements:
 test:
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - neo
     - neo.core
@@ -41,6 +42,8 @@ test:
     - neo.test.coretest
     - neo.test.iotest
     - neo.test.rawiotest
+  commands:
+    - pip check
 
 about:
   home: http://neuralensemble.org/neo
