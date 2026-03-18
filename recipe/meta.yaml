@@ -1,5 +1,5 @@
 {% set name = "neo" %}
-{% set version = "0.14.3" %}
+{% set version = "0.14.4" %}
 
 package:
   name: python-{{ name }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: python-{{ name }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 50d473fb9070d1728ec6fd72bdad16262b40f7c99df7ff5e8d927ebc2680b080
+  sha256: cbe24031c514543005ec698d8fe024b95a0839e9efd469bf6f8290dc3d86b3b5
 
 build:
   number: 0
@@ -26,12 +26,13 @@ requirements:
     # Needed for pkg_resources
     - setuptools >=78.0.2
     - packaging
-    - numpy >=1.24.4
-    - quantities >=0.16.1
+    - numpy >=1.25.2
+    - quantities >=0.16.4
 
 test:
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - neo
     - neo.core
@@ -41,6 +42,8 @@ test:
     - neo.test.coretest
     - neo.test.iotest
     - neo.test.rawiotest
+  commands:
+    - pip check
 
 about:
   home: http://neuralensemble.org/neo
